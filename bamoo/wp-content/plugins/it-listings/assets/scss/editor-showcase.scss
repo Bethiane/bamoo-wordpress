@@ -1,0 +1,30 @@
+@import 'variables';
+
+
+// Back-end styling for Showcase Block
+.itre-editor-showcase {
+    // border: solid 1px var(--wp--preset--color--black);
+    // padding: 1rem;
+    // border-radius: 2px;
+
+    &__sections {
+
+        @media (min-width: 48rem) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    }
+
+    &__section {
+        border: solid 1px black;
+        border-radius: 2px;
+        padding: 1rem;
+        font-family: sans-serif;
+        
+        span {
+            margin-right: 0.25rem;
+        }
+    }
+}

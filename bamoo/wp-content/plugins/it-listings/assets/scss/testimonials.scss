@@ -1,0 +1,51 @@
+@import 'variables';
+
+// Testimonials Section
+
+.itre-testimonials {
+
+    &__testimonials {
+        margin-top: 2rem;
+    }
+
+    &__testimonial {
+        text-align: center;
+    }
+
+    &__agent-name {
+        color: var(--accent);
+    }
+
+    &__role {
+        font-style: italic;
+    }
+
+    &__content {
+        color: var(--excerpt);
+        line-height: 1.5rem;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    &__pagination {
+        text-align: center;
+
+        .swiper-pagination-bullet {
+            display: inline-block;
+            height: 0.75rem;
+            width: 0.75rem;
+            border-radius: 50%;
+            background-color: #f5f5f5;
+            
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            &-active {
+                background-color: var(--accent);
+            }
+        }
+    }
+}

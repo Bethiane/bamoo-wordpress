@@ -1,0 +1,59 @@
+{
+    "apiVersion": 3,
+    "name": "it-listings/featured-locations",
+    "title": "Featured Locations",
+    "description": "Featured Area to highlight properties based on Location",
+    "category": "it-listings",
+    "keywords": [
+      "featured locations",
+      "properties",
+      "property"
+    ],
+    "attributes": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "description": {
+        "type": "string",
+        "default": ""
+      },
+      "align": {
+        "type": "string",
+        "default": "center"
+      },
+      "sections": {
+        "type": "array",
+        "default": [
+          {
+            "order": 1,
+            "mediaId": 0,
+            "location": 0
+          },
+          {
+            "order": 2,
+            "mediaId": 0,
+            "location": 0
+          },
+          {
+            "order": 3,
+            "mediaId": 0,
+            "location": 0
+          },
+          {
+            "order": 4,
+            "mediaId": 0,
+            "location": 0
+          }
+        ]
+      }
+    },
+    "supports": {
+      "align": ["full", "wide"],
+      "alignWide": true
+    },
+    "editorStyle": "itre-editor-featured-locations-css",
+    "style": "itre-featured-locations-css",
+    "editorScript": "itre-featured-locations-js",
+    "render": "./featured-locations.php"
+}

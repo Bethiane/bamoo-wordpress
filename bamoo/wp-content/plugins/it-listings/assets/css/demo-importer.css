@@ -1,0 +1,369 @@
+/**
+ * demo-importer.scss
+ * General IndiThemes Demo Importer admin styles.
+ */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/**
+ * Styling begins.
+ */
+.appearance_page_demo-importer .demo-importer {
+  padding-right: 1.25rem;
+}
+.appearance_page_demo-importer .demo-importer .wp-filter {
+  padding: 0 20px;
+}
+.appearance_page_demo-importer .demo-importer .wp-filter .search-form {
+  margin-left: 1em;
+}
+.appearance_page_demo-importer .demo-importer .wp-filter .filter-section {
+  float: left;
+}
+.appearance_page_demo-importer .demo-importer .wp-filter .filter-section.right {
+  float: right;
+}
+.appearance_page_demo-importer .demo-importer .wp-filter .filter-links li > a:focus {
+  box-shadow: none;
+}
+.appearance_page_demo-importer .demo-importer .theme-browser .theme .premium-demo-banner {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-weight: 600;
+  background: #1d3d4d;
+  text-transform: uppercase;
+}
+.appearance_page_demo-importer .demo-importer .theme-browser .theme .theme-screenshot img {
+  object-fit: cover;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-header {
+  background-color: #eee;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content {
+  z-index: 1;
+  bottom: 132px;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info .theme-version {
+  margin-top: 0;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info .theme-screenshot {
+  width: 100%;
+  box-sizing: border-box;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info .premium-demo-tag {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 5px;
+  padding: 0px 10px;
+  line-height: 22px;
+  border-radius: 3px;
+  background: #67c016;
+  display: inline-block;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info table.plugins-list-table {
+  margin-bottom: 1em;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info table.plugins-list-table .plugin-status {
+  float: right;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info table.plugins-list-table .plugin-status span {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  vertical-align: top;
+  white-space: nowrap;
+  text-indent: -9999px;
+  display: inline-block;
+  border: 2px solid #bfbfbf;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info table.plugins-list-table .plugin-status span.active {
+  border-color: #5cb85c;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info table.plugins-list-table .plugin-status span.active::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  width: 25%;
+  height: 50%;
+  content: "";
+  transform-origin: left top;
+  border-top: 2px solid #5cb85c;
+  border-right: 2px solid #5cb85c;
+  transform: scaleX(-1) rotate(135deg) translate(-58%, -40%);
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-sidebar-content .install-theme-info table.plugins-list-table .plugin-status span.updating-message {
+  border-left-color: #5cb85c;
+  animation: spin 0.75s linear infinite;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-footer {
+  height: 132px;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-footer .devices button:hover, .appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-footer .devices button:focus {
+  background-color: transparent;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-footer .demo-import-actions {
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-footer .demo-import-actions .button {
+  width: 100%;
+  text-align: center;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-footer .demo-import-actions .button.updated-message::before, .appearance_page_demo-importer .demo-importer .theme-install-overlay .wp-full-overlay-footer .demo-import-actions .button.updating-message::before {
+  margin-top: 11px;
+}
+.appearance_page_demo-importer .demo-importer .theme-install-overlay.expanded .wp-full-overlay-footer {
+  left: initial;
+}
+
+/**
+ * Tooltips
+ */
+.tips {
+  cursor: help;
+  text-decoration: none;
+}
+
+img.tips {
+  padding: 5px 0 0;
+}
+
+#tiptip_holder {
+  display: none;
+  z-index: 8675309;
+  position: absolute;
+  top: 0;
+  /*rtl:ignore*/
+  left: 0;
+}
+#tiptip_holder.tip_top {
+  padding-bottom: 5px;
+}
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+  margin-top: -7px;
+  margin-left: -6px;
+  border-top-color: #333;
+}
+#tiptip_holder.tip_bottom {
+  padding-top: 5px;
+}
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+  margin-top: -5px;
+  margin-left: -6px;
+  border-bottom-color: #333;
+}
+#tiptip_holder.tip_right {
+  padding-left: 5px;
+}
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+  margin-top: -6px;
+  margin-left: -5px;
+  border-right-color: #333;
+}
+#tiptip_holder.tip_left {
+  padding-right: 5px;
+}
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+  margin-top: -6px;
+  margin-left: -7px;
+  border-left-color: #333;
+}
+
+#tiptip_content {
+  color: #fff;
+  font-size: 0.8em;
+  max-width: 150px;
+  background: #333;
+  text-align: center;
+  border-radius: 3px;
+  padding: 0.618em 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+#tiptip_content code {
+  padding: 1px;
+  background: #888;
+}
+
+#tiptip_arrow,
+#tiptip_arrow_inner {
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  height: 0;
+  width: 0;
+}
+
+/*rtl:raw:
+#tiptip_arrow {
+	right: 50%;
+	margin-right: -6px;
+}
+*/
+/**
+ * Demo Import message CSS.
+ */
+.demo-import-confirm-message {
+  font-size: 14px;
+  padding: 10px 10px 0;
+}
+.demo-import-confirm-message ol {
+  margin-left: 20px;
+}
+.demo-import-confirm-message ol .warning {
+  color: #f00000;
+}
+
+.jconfirm-buttons .demo-import-confirm-button {
+  background: #f00000;
+  color: #ffffff;
+}
+.jconfirm-buttons .demo-import-cancel-button {
+  background: #eeeeee;
+  border-color: #999999;
+  color: #23282d;
+}
+
+body.demo-import-message-popup {
+  overflow: visible;
+  visibility: visible;
+}
+
+.demos-wrapper {
+  background-color: white;
+  border: solid 1px #dddddd;
+  padding: 3rem 1.5rem;
+  display: grid;
+  width: 100%;
+  gap: 5rem;
+  width: auto;
+}
+@media (min-width: 48rem) {
+  .demos-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.demos-wrapper__demo {
+  position: relative;
+}
+.demos-wrapper .pro-tag {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  z-index: 9;
+  background-color: #b12a18;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+}
+.demos-wrapper figure {
+  position: relative;
+  border: solid 1px #eeeeee;
+  border-radius: 8px;
+  margin: 0;
+}
+.demos-wrapper img {
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.demos-wrapper__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.demos-wrapper__buttons > * {
+  padding: 0.75rem 1.75rem;
+  border: 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  border-radius: 4px;
+}
+.demos-wrapper__buttons > *:hover, .demos-wrapper__buttons > *:focus, .demos-wrapper__buttons > *:active {
+  color: white;
+}
+.demos-wrapper__buttons--import {
+  background-color: #b12a18;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.demos-wrapper__buttons--import[disabled] {
+  background-color: #dddddd;
+  color: #aaaaaa;
+  cursor: default;
+}
+.demos-wrapper__buttons--import[disabled]:hover, .demos-wrapper__buttons--import[disabled]:focus {
+  background-color: #dddddd;
+}
+.demos-wrapper__buttons--import svg {
+  margin-left: 0.25rem;
+}
+.demos-wrapper__buttons--import:hover, .demos-wrapper__buttons--import:focus {
+  background-color: #9b2515;
+}
+.demos-wrapper__buttons--import.import-complete {
+  background-color: #3ec014;
+  color: white;
+}
+.demos-wrapper__buttons--import.importing, .demos-wrapper__buttons--import.import-complete {
+  cursor: default;
+}
+.demos-wrapper__buttons--demo {
+  background-color: #2b6c86;
+}
+.demos-wrapper__buttons--demo:hover {
+  background-color: #255c73;
+}
+
+.import-spinner {
+  animation: importSVG 2000ms linear infinite;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+@keyframes importSVG {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}

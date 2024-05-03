@@ -1,0 +1,65 @@
+{
+    "apiVersion": 3,
+    "name": "it-listings/featured-types",
+    "title": "Featured Property Types",
+    "description": "Featured Area to showcase properties based on type - Apartment, Studio,z Villa etc.",
+    "category": "it-listings",
+    "keywords": [
+      "featured area",
+      "properties",
+      "categories",
+      "types",
+      "property"
+    ],
+    "attributes": {
+      "title": {
+        "type": "string",
+        "default": ""
+      },
+      "description": {
+        "type": "string",
+        "default": ""
+      },
+      "align": {
+        "type": "string",
+        "default": "center"
+      },
+      "sections": {
+        "type": "array",
+        "default": [
+          {
+              "order": 1,
+              "mediaId": 0,
+              "type": 0,
+              "label": ""
+          },
+          {
+              "order": 2,
+              "mediaId": 0,
+              "type": 0,
+              "label": ""
+          },
+          {
+              "order": 3,
+              "mediaId": 0,
+              "type": 0,
+              "label": ""
+          },
+          {
+            "order": 4,
+            "mediaId": 0,
+            "type": 0,
+            "label": ""
+          }
+        ]
+      }
+    },
+    "supports": {
+      "align": ["full", "wide"],
+      "alignWide": true
+    },
+    "editorStyle": "itre-editor-featured-types-css",
+    "style": "itre-featured-types-css",
+    "editorScript": "itre-featured-types-js",
+    "render": "./featured-types.php"
+}

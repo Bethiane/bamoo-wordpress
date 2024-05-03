@@ -1,0 +1,37 @@
+{
+    "apiVersion": 3,
+    "name": "it-listings/testimonials",
+    "title": "Testimonials",
+    "description": "Featured area to showcase testimonials from clients",
+    "category": "it-listings",
+    "keywords": [
+      "testimonials",
+      "reviews",
+      "users",
+      "ratings",
+      "property"
+    ],
+    "attributes": {
+        "title": {
+          "type": "string",
+          "default": ""
+        },
+        "align": {
+          "type": "string",
+          "default": "center"
+        },
+        "testimonials": {
+            "type": "array",
+            "default": []
+        }
+    },
+    "supports": {
+      "align": ["full", "wide"],
+      "alignWide": true
+    },
+    "editorStyle": "itre-editor-testimonials-css",
+    "style": ["itre-swiper-css", "itre-testimonials-css"],
+    "editorScript": "itre-testimonials-js",
+    "viewScript": ["itre-swiper-js", "itre-front.testimonials-js"],
+    "render": "./testimonials.php"
+}

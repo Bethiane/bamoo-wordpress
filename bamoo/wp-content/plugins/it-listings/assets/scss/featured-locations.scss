@@ -1,0 +1,50 @@
+// Featured Locations Section
+@import 'variables';
+
+.itre-featured-locations {
+    
+    &__sections {
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        margin-top: 1.25rem;
+
+        @media (min-width: 48rem) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__section {
+        display: flex;
+        background-color: var(--accent);
+
+        > * {
+            width: 50%;
+        }
+
+        @media (max-width: 48rem) {
+
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        @media (min-width: 48rem) {
+            width: 50%;
+
+            &:nth-child(n+3) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    &__location-name {
+        align-self: center;
+        width: auto;
+        padding: 0.25rem 0.75rem;
+
+        a {
+            color: var(--wp--preset--color--white);
+        }
+    }
+}

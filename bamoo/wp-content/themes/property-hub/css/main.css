@@ -1,0 +1,56 @@
+#masthead.header-widget #header-image {
+  height: auto;
+}
+@media (min-width: 48rem) {
+  #masthead.header-widget #header-image {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+}
+#masthead.header-widget .header-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  margin-top: 1.25rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 48rem) {
+  #masthead.header-widget .header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  #masthead.header-widget .header-wrapper > * {
+    width: 50%;
+  }
+}
+@media (min-width: 48rem) {
+  #masthead.header-widget .header-hero-wrapper .itre-hero-area {
+    text-align: initial;
+  }
+}
+#masthead.header-widget .header-hero-wrapper p {
+  color: white;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 48rem) {
+  #masthead.header-widget .header-hero-wrapper p {
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+}
+#masthead.header-widget .header-widget-area-wrapper .wpcf7 {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 0.5rem;
+}
+#masthead.header-widget .header-widget-area-wrapper .wpcf7 input,
+#masthead.header-widget .header-widget-area-wrapper .wpcf7 select,
+#masthead.header-widget .header-widget-area-wrapper .wpcf7 textarea {
+  border-radius: 0.25rem;
+  border: 0;
+}

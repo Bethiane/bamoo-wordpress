@@ -1,0 +1,33 @@
+// Footer Styling
+
+#footer-sidebar {
+    background-color: var(--accent);
+    filter: brightness(85%) contrast(150%);
+    padding-top: 3em;
+    margin-top: 2rem;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    caption {
+        color: white;
+    }
+    
+    @media (max-width: 48rem) {
+        text-align: center;
+    }
+}
+
+#colophon {
+    background-color: var(--accent);
+    filter: brightness(85%) contrast(150%);
+    color: white;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,35 @@
+.itre-testimonials__testimonials {
+  margin-top: 2rem;
+}
+.itre-testimonials__testimonial {
+  text-align: center;
+}
+.itre-testimonials__agent-name {
+  color: var(--accent);
+}
+.itre-testimonials__role {
+  font-style: italic;
+}
+.itre-testimonials__content {
+  color: var(--excerpt);
+  line-height: 1.5rem;
+}
+.itre-testimonials img {
+  border-radius: 50%;
+}
+.itre-testimonials__pagination {
+  text-align: center;
+}
+.itre-testimonials__pagination .swiper-pagination-bullet {
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+.itre-testimonials__pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 1rem;
+}
+.itre-testimonials__pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent);
+}

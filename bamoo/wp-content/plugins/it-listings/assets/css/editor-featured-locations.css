@@ -1,0 +1,20 @@
+.itre-editor-featured-locations__sections {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 48rem) {
+  .itre-editor-featured-locations__sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.itre-editor-featured-locations__section {
+  border: solid 1px var(--wp--preset--color--black);
+  padding: 1rem;
+}
+.itre-editor-featured-locations__section .placeholder-text {
+  font-size: 0.875rem;
+  font-family: sans-serif;
+}
+.itre-editor-featured-locations__section span {
+  margin-right: 0.25rem;
+}

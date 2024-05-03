@@ -1,0 +1,28 @@
+@import 'variables';
+
+// Back-end styling for Featured Property Types block
+.itre-editor-featured-locations {
+    
+    &__sections {
+        display: grid;
+        gap: 1.25rem;
+
+        @media (min-width: 48rem) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__section {
+        border: solid 1px var(--wp--preset--color--black);
+        padding: 1rem;
+
+        .placeholder-text {
+            font-size: 0.875rem;
+            font-family: sans-serif;
+        }
+
+        span {
+            margin-right: 0.25rem;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+// Styling of Single Post Pages
+
+body.single {
+
+    #primary {
+        width: 100%;
+    }
+    
+    .entry-content {
+
+        a {
+            @extend %underline;
+        }
+    }
+
+    .post-navigation {
+        line-height: 1.5rem;
+        position: relative;
+
+        .nav-subtitle {
+            color: #999999;
+        }
+    }
+    #itre_related_posts_wrapper {
+
+        h3 {
+            margin-top: 0.625rem;
+            font-size: 1.5rem;
+
+            a {
+                color: var(--body-text);
+                @include line-clamp(2);
+            }
+        }
+        .entry-meta {
+
+            > * {
+                display: inline-block;
+                width: auto;
+            }
+        }
+    }
+    #author_box {
+        border: solid 1px #eeeeee;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+
+        .author_bio {
+            line-height: 1.25rem;
+        }
+
+        img {
+            display: inline-block;
+            border-radius: 50%;
+        }
+	}
+}

@@ -1,0 +1,92 @@
+// Featured Locations Section
+@import 'variables';
+
+.itre-featured-tabs {
+
+    &__tab-titles {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+
+        span {
+            position: relative;
+            margin: auto 0.75em;
+            font-size: 1.25rem;
+            color: var(--accent);
+            cursor: pointer;
+
+            &.is-active {
+                &:before, &:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    top: 100%;
+                    height: 3px;
+                    background-color: var(--accent);
+                    animation: activeTab 300ms ease-out forwards;
+                }
+                &:before {
+                    left: 50%;
+                }
+
+                &:after {
+                    right: 50%;
+                }
+            }
+        }
+    }
+
+    &__posts {
+        display: grid;
+        column-gap: 1.5rem;
+        opacity: 1;
+        transition: all 300ms ease;
+        
+        @media (min-width: 48rem) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 60rem) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &:not(:first-child) {
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    &__post {
+        position: relative;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+
+        a {
+
+            &:hover {
+
+                h3 {
+                    padding-top: 8rem;
+                }
+            }
+        }
+    }
+
+    .itre-for-tag {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    &__post-title {
+        position: absolute;
+        bottom: 0;
+        color: var(--wp--preset--color--white);
+        font-weight: 400;
+        @include gradient(to top);
+        width: 100%;
+        margin: 0;
+        padding: 5.75rem 1rem 0.75rem;
+        transition: padding 300ms ease;
+    }
+}

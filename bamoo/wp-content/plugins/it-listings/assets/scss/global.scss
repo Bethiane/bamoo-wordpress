@@ -1,0 +1,53 @@
+// Global Styling
+@import 'variables';
+
+h2 {
+    font-family: sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 0;
+}
+
+.section-sub {
+    text-align: center;
+    color: var(--excerpt);
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    @media (min-width: 48rem) {
+        width: 65%;
+    }
+}
+
+.section-top {
+    margin-bottom: 1.25rem;
+}
+
+input {
+     
+    &.error {
+        border: solid 1px #da2c2c !important;
+        box-shadow: 0 0 0 .5px #da2c2c !important;
+    }
+}
+
+section {
+
+    &:not(.alignfull) {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+}
+
+// Styling for Back-end
+.editor-styles-wrapper {
+
+    section {
+        border: solid 1px var(--wp--preset--color--black);
+        padding: 1rem;
+        border-radius: 2px;
+    }
+}
