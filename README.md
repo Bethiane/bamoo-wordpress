@@ -129,6 +129,10 @@ We designed forms using the "Ninja Forms" plugin, ensuring they are easy to unde
 Implemented user feedback mechanisms on forms to assist users in completing them correctly.
 
 
+![image](https://github.com/Bethiane/bamoo-wordpress/assets/73661281/24a43d1a-86fc-4298-9e21-571174d02408)
+
+
+
 ### **Visible Colors**: 
 We also maintained visible colors and ensured sufficient color contrast to improve readability for users with visual impairments.
 
